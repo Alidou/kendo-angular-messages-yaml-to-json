@@ -1,0 +1,2 @@
+This package converts the YAML files present in the package @progress/kendo-angular-messages and converts them to JSON files.
+Using the NgxTranslateKendoMessageService, the json values can be read by ngx-translate to provide dynamic translations of the kendo components.

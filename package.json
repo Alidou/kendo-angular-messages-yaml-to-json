@@ -1,0 +1,14 @@
+{
+  "name": "kendo-angular-messages-yaml-to-json",
+  "version": "1.0.0",
+  "description": "use ngx-translate to translate kendo components",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "Alidou Ouedraogo <oalidou@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@progress/kendo-angular-messages": "^1.32.2",
+    "js-yaml": "^4.1.0"
+  }
+}
