@@ -1,14 +1,38 @@
+# Description
 This package converts the YAML files present in the package @progress/kendo-angular-messages and converts them to JSON files.
 
-Using the NgxTranslateKendoMessageService, the json values can be read by ngx-translate to provide dynamic translations of the kendo components.
+# Message Transalation Service
+Using the NgxTranslateMessageService, the json values can be read by ngx-translate to provide dynamic translations of the kendo components.
 
 See https://www.telerik.com/kendo-angular-ui/components/globalization/localization/messages/#toc-implementing-the-custom-service
 
-How to use :
+# Pre-requisite
+1. Make sure you have have NodeJS installed
+2. Install this package dependencies:
+```
+npm install
+```
+# List supported languages
 
-0. Make sure you have nodejs installed
-1. Run command 'npm install'
-2. Run command 'node index'
-3. The generated files will be contained inside the folder 'results'.
+Run command:
+```
+node extract-translations --supported-languages
+```
 
-Inside the script index.js, you can modify the langagues and the modules/components needed.
+# Generate language files
+
+Run command:
+```
+node extract-translations --generate=en-US,fr-BE,nl-BE --results-path=results
+```
+
+**The specified languages must be in the list of supported languages.**
+
+The generated files will be inside the ***--results-path*** folder (default: results). <br> 
+You can copy and Paste their content in your project.
+
+# List supported kendo components
+
+Run command:
+```
+node extract-translations --list-components
